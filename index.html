@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+
+    <!-- Link to main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="images/icon.png">
+    <title>Kid Cudi Video Gallery</title>
+</head>
+
+<body>
+    <header class="clearfix">
+        <img id="logoimage" src="images/cudilogo.webp">
+        <h2>Kid Cudi Videos</h2>
+    </header>
+    <nav id="nav_list">
+        <ul>
+            <li><a href="#vid1">Mr. Rager</a></li>
+            <!-- # symbol in href means ... -->
+            <li><a href="#vid2">Soundtrack 2 My Life</a></li>
+            <li><a href="#vid3">Just Who I Am</a></li>
+            <li><a href="#vid4">Erase Me</a></li>
+            <li><a href="#vid5">Pursuit Of Happiness</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article id="vid1">
+                <h4>Mr. Rager</h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/06r35x1nvo0" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+            <article id="vid2">
+                <h4>Sountrack 2 My Life</h4>
+                <div class="videowrapper">
+                    <iframe width="1064" height="608" src="https://www.youtube.com/embed/TEmp41IbU-E"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+            <article id="vid3">
+                <h4>Just Who I Am</h4>
+                <div class="videowrapper">
+                    <iframe width="1064" height="608" src="https://www.youtube.com/embed/hGbP_kTM4CA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+            <article id="vid4">
+                <h4>Erase Me</h4>
+                <div class="videowrapper">
+                    <iframe width="1064" height="608" src="https://www.youtube.com/embed/ICaTsTkBPV8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+            <article id="vid4">
+                <h4>Pursuit Of Happiness</h4>
+                <div class="videowrapper">
+                    <iframe width="1064" height="608" src="https://www.youtube.com/embed/3Z_Ys3BO_4M"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+        <div><button onclick="topFunction()" id="cornerbtn" title="Go to top">Return To Top</button></div>
+        <script>
+            // When the user scrolls down 800px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+                    document.getElementById("cornerbtn").style.display = "block";
+                } else {
+                    document.getElementById("cornerbtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </main>
+    <footer>
+        <p>&copy; 2022 Justin McCartney Productions</p>
+        <img src="images/footerimage.gif">
+    </footer>
+</body>
+
+</html>
